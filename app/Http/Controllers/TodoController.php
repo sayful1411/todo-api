@@ -77,7 +77,7 @@ class TodoController extends Controller
             if($result != true){
                 return response()->json([
                     'status' => 'error',
-                    'message' => 'Task Delete Failed'
+                    'message' => 'The selected task id is not valid'
                 ],200);
             }else{
                 return response()->json([
